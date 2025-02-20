@@ -1,0 +1,24 @@
+{
+    "name": "maksde/helpers",
+    "version": "1.0.0",
+    "description": "Helpers for Laravel and FilamentPhp",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Maksde\\Helpers\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Demyanenko Maksim",
+            "email": "demyanenkomaks0@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.9",
+        "filament/filament": "^3.2"
+    }
+}
