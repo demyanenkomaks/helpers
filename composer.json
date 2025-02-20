@@ -1,7 +1,7 @@
 {
     "name": "maksde/helpers",
     "version": "1.0.0",
-    "description": "Helpers for Laravel and FilamentPhp",
+    "description": "Helpers for Laravel and Filament",
     "type": "library",
     "license": "MIT",
     "autoload": {
