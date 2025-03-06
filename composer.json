@@ -1,6 +1,6 @@
 {
     "name": "maksde/helpers",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "description": "Helpers for Laravel and Filament",
     "type": "library",
     "license": "MIT",
@@ -20,5 +20,12 @@
         "php": "^8.2",
         "laravel/framework": "^11.9",
         "filament/filament": "^3.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Maksde\\Helpers\\HelpersServiceProvider"
+            ]
+        }
     }
 }
