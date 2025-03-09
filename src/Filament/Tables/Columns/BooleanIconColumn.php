@@ -1,6 +1,6 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Columns;
+namespace Maksde\Helpers\Filament\Tables\Columns;
 
 use Filament\Tables\Columns\IconColumn;
 

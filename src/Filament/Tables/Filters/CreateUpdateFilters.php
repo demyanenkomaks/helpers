@@ -1,6 +1,6 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Filters;
+namespace Maksde\Helpers\Filament\Tables\Filters;
 
 class CreateUpdateFilters
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Forms;
+namespace Maksde\Helpers\Filament\Forms\Components;
 
 use Filament\Forms\Components\Placeholder;
 use Illuminate\Support\Carbon;
@@ -25,6 +25,7 @@ class TimestampPlaceholder
                 };
             })
             ->content(fn ($record): string => ! empty($record->{$column}) ? Carbon::parse($record->{$column})->translatedFormat($format) : '')
-            ->hidden(fn ($record): bool => empty($record->{$column}));
+            ->hidden(fn ($record): bool => empty($record->{$column}))
+            ->columnSpan($columnSpan);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Forms;
+namespace Maksde\Helpers\Filament\Forms\Components;
 
 class CreateUpdatePlaceholders
 {

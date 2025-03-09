@@ -1,6 +1,6 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Filters;
+namespace Maksde\Helpers\Filament\Tables\Filters;
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Filters\Filter;
