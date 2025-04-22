@@ -6,4 +6,11 @@ return [
         'updated_at' => 'Updated at',
         'deleted_at' => 'Deleted at',
     ],
+
+    'message' => [
+        'copy' => [
+            'phone' => 'Phone number copied',
+            'email' => 'E-mail address copied',
+        ],
+    ],
 ];

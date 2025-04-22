@@ -6,9 +6,9 @@ use Filament\Tables\Columns\ToggleColumn;
 
 class BooleanToggleColumn
 {
-    public static function make(string $column, string $label, bool $isToggledHiddenByDefault = false): ToggleColumn
+    public static function make(string $name, ?string $label = null, bool $isToggledHiddenByDefault = false): ToggleColumn
     {
-        return ToggleColumn::make($column)
+        return ToggleColumn::make($name)
             ->label($label)
             ->onColor('success')
             ->offColor('danger')

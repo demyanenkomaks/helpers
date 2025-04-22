@@ -8,10 +8,13 @@ use Illuminate\Database\Eloquent\Builder;
 
 class TimestampFilter
 {
-    public static function make(string $column, ?string $label = null): Filter
+    /**
+     * @throws \Exception
+     */
+    public static function make(string $name, ?string $label = null): Filter
     {
         if ($label === null) {
-            $label = match ($column) {
+            $label = match ($name) {
                 'created_at' => __('helpers::helpers.timestamp.created_at'),
                 'updated_at' => trans('helpers::helpers.timestamp.updated_at'),
                 'deleted_at' => trans('helpers::helpers.timestamp.deleted_at'),
@@ -19,15 +22,15 @@ class TimestampFilter
             };
         }
 
-        return Filter::make($column)
+        return Filter::make($name)
             ->form([
-                DatePicker::make($column.'_from')->label($label.' от'),
-                DatePicker::make($column.'_until')->label($label.' до'),
+                DatePicker::make($name.'_from')->label($label.' от'),
+                DatePicker::make($name.'_until')->label($label.' до'),
             ])
-            ->query(function (Builder $query, array $data) use ($column): Builder {
+            ->query(function (Builder $query, array $data) use ($name): Builder {
                 return $query
-                    ->when($data[$column.'_from'], fn (Builder $query, $date): Builder => $query->whereDate($column, '>=', $date))
-                    ->when($data[$column.'_until'], fn (Builder $query, $date): Builder => $query->whereDate($column, '<=', $date));
+                    ->when($data[$name.'_from'], fn (Builder $query, $date): Builder => $query->whereDate($name, '>=', $date))
+                    ->when($data[$name.'_until'], fn (Builder $query, $date): Builder => $query->whereDate($name, '<=', $date));
             });
     }
 }

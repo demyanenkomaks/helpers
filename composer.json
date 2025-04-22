@@ -1,7 +1,7 @@
 {
     "name": "maksde/helpers",
-    "version": "4.0.0",
-    "description": "Helpers for Laravel and Filament",
+    "version": "4.1.0",
+    "description": "Helpers for Filament",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -18,8 +18,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": "^8.2",
-        "laravel/framework": "^11.9",
-        "filament/filament": "^3.2"
+        "filament/filament": "^3.0"
     },
     "extra": {
         "laravel": {

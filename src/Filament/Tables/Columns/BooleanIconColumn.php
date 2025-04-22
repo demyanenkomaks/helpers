@@ -6,9 +6,9 @@ use Filament\Tables\Columns\IconColumn;
 
 class BooleanIconColumn
 {
-    public static function make(string $column, string $label, bool $isToggledHiddenByDefault = true): IconColumn
+    public static function make(string $name, ?string $label = null, bool $isToggledHiddenByDefault = false): IconColumn
     {
-        return IconColumn::make($column)
+        return IconColumn::make($name)
             ->label($label)
             ->sortable()
             ->boolean()

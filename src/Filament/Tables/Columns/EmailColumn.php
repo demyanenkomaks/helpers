@@ -1,0 +1,20 @@
+<?php
+
+namespace Maksde\Helpers\Filament\Tables\Columns;
+
+use Filament\Tables\Columns\TextColumn;
+
+class EmailColumn
+{
+    public static function make(string $name, ?string $label = null): TextColumn
+    {
+        return TextColumn::make($name)
+            ->label($label)
+            ->icon('heroicon-m-envelope')
+            ->sortable()
+            ->searchable()
+            ->copyable()
+            ->copyMessage(__('helpers::helpers.message.copy.email'))
+            ->copyMessageDuration(1500);
+    }
+}

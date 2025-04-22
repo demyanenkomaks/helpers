@@ -6,17 +6,17 @@ use Filament\Tables\Columns\TextColumn;
 
 class TimestampColumn
 {
-    public static function make(string $column, ?string $label = null, bool $isToggledHiddenByDefault = false, ?string $format = null): TextColumn
+    public static function make(string $name, ?string $label = null, bool $isToggledHiddenByDefault = false, ?string $format = null): TextColumn
     {
         $format = $format ?? config('helpers.format.timestamp');
 
-        return TextColumn::make($column)
-            ->label(function () use ($column, $label): ?string {
+        return TextColumn::make($name)
+            ->label(function () use ($name, $label): ?string {
                 if ($label) {
                     return $label;
                 }
 
-                return match ($column) {
+                return match ($name) {
                     'created_at' => __('helpers::helpers.timestamp.created_at'),
                     'updated_at' => trans('helpers::helpers.timestamp.updated_at'),
                     'deleted_at' => trans('helpers::helpers.timestamp.deleted_at'),
