@@ -6,6 +6,12 @@ use Filament\Tables\Columns\TextColumn;
 
 class PhoneColumn
 {
+    /**
+     * @param  string  $name  Название столбца
+     * @param  string|null  $label  Подпись столбца
+     * @param  string|null  $format  Формат отображения номера телефона, дефолтный указан в конфиге
+     * @return TextColumn Текстовый столбец номера телефона
+     */
     public static function make(string $name, ?string $label = null, ?string $format = null): TextColumn
     {
         $format = $format ?? config('helpers.format.tables.phone');
@@ -21,6 +27,11 @@ class PhoneColumn
             ->formatStateUsing(fn (string $state): string => self::phoneFormat($state, $format));
     }
 
+    /**
+     * @param  string  $phone  Номер телефона
+     * @param  string  $format  Формат отображения номера телефона
+     * @return string Номер телефона в указаном формате отображения
+     */
     private static function phoneFormat(string $phone, string $format): string
     {
         if (preg_match(config('helpers.format.form.phone.regex'), $phone) !== 1) {

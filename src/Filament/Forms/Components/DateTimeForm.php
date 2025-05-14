@@ -6,6 +6,12 @@ use Filament\Forms\Components\DateTimePicker;
 
 class DateTimeForm
 {
+    /**
+     * @param  string  $name  Название поля
+     * @param  string|null  $label  Подпись поля
+     * @param  int|string  $columnSpan  Сколько столбцов заполнит компонент в родительской сетке формы
+     * @return DateTimePicker Компонент выбора даты и времени
+     */
     public static function make(string $name, ?string $label = null, int|string $columnSpan = 1): DateTimePicker
     {
         return DateTimePicker::make($name)

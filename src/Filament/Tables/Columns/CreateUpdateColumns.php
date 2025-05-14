@@ -4,6 +4,9 @@ namespace Maksde\Helpers\Filament\Tables\Columns;
 
 class CreateUpdateColumns
 {
+    /**
+     * @return array Массив столбцов Добавлена и Отредактирована
+     */
     public static function make(): array
     {
         return [

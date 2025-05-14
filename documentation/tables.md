@@ -4,11 +4,11 @@
 
 Параметры:
 
-`?string $name = 'id'` - название столбца
+`?string $name = 'id'` - Название столбца
 
-`?string $label = null` - подпись столбца
+`?string $label = null` - Подпись столбца
 
-`bool $isToggledHiddenByDefault = true` - столбец скрыт по умолчанию
+`bool $isToggledHiddenByDefault = true` - Столбец скрыт по умолчанию
 
 ```php
 use Maksde\Helpers\Filament\Tables\Columns\IdColumn;
@@ -20,11 +20,11 @@ IdColumn::make()
 
 Параметры:
 
-`string $name` - название столбец
+`string $name` - Название столбеца
 
-`?string $label = null` - подпись поля
+`?string $label = null` - Подпись столбца
 
-`bool $isToggledHiddenByDefault = false` - столбец скрыт по умолчанию
+`bool $isToggledHiddenByDefault = false` - Столбец скрыт по умолчанию
 
 ```php
 use Maksde\Helpers\Filament\Tables\Columns\BooleanIconColumn;
@@ -36,11 +36,11 @@ BooleanIconColumn::make('is_active', 'Активный')
 
 Параметры:
 
-`string $name` - название столбца
+`string $name` - Название столбца
 
-`?string $label = null` - подпись столбца
+`?string $label = null` - Подпись столбца
 
-`bool $isToggledHiddenByDefault = false` - столбец скрыт по умолчанию
+`bool $isToggledHiddenByDefault = false` - Столбец скрыт по умолчанию
 
 ```php
 use Maksde\Helpers\Filament\Tables\Columns\BooleanToggleColumn;
@@ -52,9 +52,9 @@ BooleanToggleColumn::make('is_active', 'Активный')
 
 Параметры:
 
-`string $name` - название столбца
+`string $name` - Название столбца
 
-`?string $label = null` - подпись столбца
+`?string $label = null` - Подпись столбца
 
 ```php
 use Maksde\Helpers\Filament\Tables\Columns\EmailColumn;
@@ -66,11 +66,11 @@ EmailColumn::make('email', 'E-mail')
 
 Параметры:
 
-`string $name` - название столбца
+`string $name` - Название столбца
 
-`?string $label = null` - подпись столбца
+`?string $label = null` - Подпись столбца
 
-`?string $format = null` - формат отображения номера телефона, можно указать в конфиге
+`?string $format = null` - Формат отображения номера телефона, дефолтный указан в конфиге
 
 ```php
 use Maksde\Helpers\Filament\Tables\Columns\PhoneColumn;
@@ -82,11 +82,11 @@ PhoneColumn::make('phone', 'Номер телефона')
 
 Параметры:
 
-`string $name` - название столбца
+`string $name` - Название столбца
 
-`?string $label = null` - подпись столбца
+`?string $label = null` - Подпись столбца
 
-`?string $format = null` - формат отображения даты, можно указать в конфиге
+`?string $format = null` - Формат отображения даты, дефолтный указан в конфиге
 
 ```php
 use Maksde\Helpers\Filament\Tables\Columns\DateColumn;
@@ -98,11 +98,11 @@ DateColumn::make('date', 'Дата')
 
 Параметры:
 
-`string $name` - название столбца
+`string $name` - Название столбца
 
-`?string $label = null` - подпись столбца
+`?string $label = null` - Подпись столбца
 
-`?string $format = null` - формат отображения времени, можно указать в конфиге
+`?string $format = null` - Формат отображения времени, дефолтный указан в конфиге
 
 ```php
 use Maksde\Helpers\Filament\Tables\Columns\TimeColumn;
@@ -115,13 +115,13 @@ TimeColumn::make('time', 'Время')
 
 Параметры:
 
-`string $name` - название столбца
+`string $name` - Название столбца
 
-`?string $label = null` - подпись столбца
+`?string $label = null` - Подпись столбца
 
-`bool $isToggledHiddenByDefault = false` - столбец скрыт по умолчанию
+`bool $isToggledHiddenByDefault = false` - Столбец скрыт по умолчанию
 
-`?string $format = null` - формат отображения даты и времени, можно указать в конфиге
+`?string $format = null` - Формат отображения даты и времени, дефолтный указан в конфиге
 
 ```php
 use Maksde\Helpers\Filament\Tables\Columns\TimestampColumn;

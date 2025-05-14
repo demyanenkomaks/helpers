@@ -4,11 +4,11 @@
 
 Параметры:
 
-`string $name` - название поля
+`string $name` - Название поля
 
-`?string $label = null` - подпись поля
+`?string $label = null` - Подпись поля
 
-`int|string $columnSpan = 'full'` - сколько столбцов должен заполнять компонент поля в родительской сетке формы
+`int|string $columnSpan = 'full'` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
 use Maksde\Helpers\Filament\Forms\Components\BooleanToggleForm;
@@ -20,11 +20,11 @@ BooleanToggleForm::make('is_active', 'Активный')
 
 Параметры:
 
-`string $name` - название поля
+`string $name` - Название поля
 
-`?string $label = null` - подпись поля
+`?string $label = null` - Подпись поля
 
-`int|string $columnSpan = 1` - сколько столбцов должен заполнять компонент поля в родительской сетке формы
+`int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
 use Maksde\Helpers\Filament\Forms\Components\DateForm;
@@ -36,11 +36,11 @@ DateForm::make('date', 'Дата')
 
 Параметры:
 
-`string $name` - название поля
+`string $name` - Название поля
 
-`?string $label = null` - подпись поля
+`?string $label = null` - Подпись поля
 
-`int|string $columnSpan = 1` - сколько столбцов должен заполнять компонент поля в родительской сетке формы
+`int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
 use Maksde\Helpers\Filament\Forms\Components\TimeForm;
@@ -52,11 +52,11 @@ TimeForm::make('time', 'Время')
 
 Параметры:
 
-`string $name` - название поля
+`string $name` - Название поля
 
-`?string $label = null` - подпись поля
+`?string $label = null` - Подпись поля
 
-`int|string $columnSpan = 1` - сколько столбцов должен заполнять компонент поля в родительской сетке формы
+`int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
 use Maksde\Helpers\Filament\Forms\Components\DateTimeForm;
@@ -68,11 +68,11 @@ DateTimeForm::make('datetime', 'Дата и время')
 
 Параметры:
 
-`string $name` - название поля
+`string $name` - Название поля
 
-`?string $label = null` - подпись поля
+`?string $label = null` - Подпись поля
 
-`int|string $columnSpan = 1` - сколько столбцов должен заполнять компонент поля в родительской сетке формы
+`int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
 use Maksde\Helpers\Filament\Forms\Components\PhoneForm;
@@ -84,13 +84,13 @@ PhoneForm::make('phone', 'Телефон')
 
 Параметры:
 
-`string $name` - название поля
+`string $name` - Название поля
 
-`?string $label = null` - подпись поля
+`?string $label = null` - Подпись поля
 
-`int|string $columnSpan = 1` - сколько столбцов должен заполнять компонент поля в родительской сетке формы
+`int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
-`?string $format = null` - формат отображения даты и времени, можно указать в конфиге
+`?string $format = null` - Формат отображения даты и времени, дефолтный указан в конфиге
 
 ```php
 use Maksde\Helpers\Filament\Forms\Components\TimestampPlaceholder;
@@ -102,7 +102,7 @@ TimestampPlaceholder::make('published_at', 'Опубликована')
 
 Параметры:
 
-`int|string $columnSpan = 1` - сколько столбцов должен заполнять компонент поля в родительской сетке формы
+`int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
 use Maksde\Helpers\Filament\Forms\Components\CreateUpdatePlaceholders;

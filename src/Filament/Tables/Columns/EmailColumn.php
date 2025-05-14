@@ -6,6 +6,11 @@ use Filament\Tables\Columns\TextColumn;
 
 class EmailColumn
 {
+    /**
+     * @param  string  $name  Название столбца
+     * @param  string|null  $label  Подпись столбца
+     * @return TextColumn Текстовый столбец почты
+     */
     public static function make(string $name, ?string $label = null): TextColumn
     {
         return TextColumn::make($name)

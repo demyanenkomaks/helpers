@@ -11,7 +11,7 @@ class HelpersServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/helpers.php', 'helpers');
     }
 
-    public function boot()
+    public function boot(): void
     {
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'helpers');
 

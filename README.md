@@ -1,20 +1,20 @@
-# Helpers for Filament
+# Помощник для Filament
 
 Шаблоны для Resource FilamentPhp.
 
-## Installation
+## Установка
 
-Install the package with Composer:
+Установить пакет с помощью Composer:
 ```bash
 composer require maksde/helpers
 ```
-Publish the configuration file:
+Опубликуйте файл конфигурации:
 
 ```bash
 php artisan vendor:publish --tag="helpers-config"
 ```
 
-Publish the translation files:
+Опубликовать файлы перевода:
 
 ```bash
 php artisan vendor:publish --tag="helpers-lang"

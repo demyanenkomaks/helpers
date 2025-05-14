@@ -4,9 +4,9 @@
 
 Параметры:
 
-`string $name` - название столбца
+`string $name` - Название столбца
 
-`?string $label = null` - подпись столбца
+`?string $label = null` - Подпись столбца
 
 ```php
 use Maksde\Helpers\Filament\Tables\Filters\TimestampFilter;

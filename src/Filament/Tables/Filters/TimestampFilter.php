@@ -9,6 +9,10 @@ use Illuminate\Database\Eloquent\Builder;
 class TimestampFilter
 {
     /**
+     * @param  string  $name  Название столбца
+     * @param  string|null  $label  Подпись столбца
+     * @return Filter Компонент фильтра даты и/или время формат поиска от даты до даты
+     *
      * @throws \Exception
      */
     public static function make(string $name, ?string $label = null): Filter
@@ -16,8 +20,8 @@ class TimestampFilter
         if ($label === null) {
             $label = match ($name) {
                 'created_at' => __('helpers::helpers.timestamp.created_at'),
-                'updated_at' => trans('helpers::helpers.timestamp.updated_at'),
-                'deleted_at' => trans('helpers::helpers.timestamp.deleted_at'),
+                'updated_at' => __('helpers::helpers.timestamp.updated_at'),
+                'deleted_at' => __('helpers::helpers.timestamp.deleted_at'),
                 default => null,
             };
         }
