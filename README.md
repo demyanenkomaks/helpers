@@ -1,6 +1,6 @@
 # Помощник для Filament
 
-![Version](http://poser.pugx.org/maksde/helpers/version)
+![Packagist Version](https://img.shields.io/packagist/v/maksde/helpers)
 ![Packagist Downloads](https://img.shields.io/packagist/dt/maksde/helpers)
 ![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/maksde/helpers/php)
 ![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/maksde/helpers/filament%2Ffilament)
