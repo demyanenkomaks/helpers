@@ -1,8 +1,11 @@
 # Помощник для Filament
 
-![Packagist Version](https://img.shields.io/packagist/v/maksde/helpers)
+![Version](http://poser.pugx.org/maksde/helpers/version)
 ![Packagist Downloads](https://img.shields.io/packagist/dt/maksde/helpers)
+![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/maksde/helpers/php)
+![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/maksde/helpers/filament%2Ffilament)
 ![Packagist License](https://img.shields.io/packagist/l/maksde/helpers)
+
 
 Шаблоны для Resource FilamentPhp которые помогут сократить код для базово используемых компонентов форм, таблиц и фильтров таблиц.
 
