@@ -1,6 +1,10 @@
 # Помощник для Filament
 
-Шаблоны для Resource FilamentPhp.
+![Packagist Version](https://img.shields.io/packagist/v/maksde/helpers)
+![Packagist Downloads](https://img.shields.io/packagist/dt/maksde/helpers)
+![Packagist License](https://img.shields.io/packagist/l/maksde/helpers)
+
+Шаблоны для Resource FilamentPhp которые помогут сократить код для базово используемых компонентов форм, таблиц и фильтров таблиц.
 
 ## Установка
 
@@ -8,14 +12,13 @@
 ```bash
 composer require maksde/helpers
 ```
-Опубликуйте файл конфигурации:
 
+Опубликуйте файл конфигурации:
 ```bash
 php artisan vendor:publish --tag="helpers-config"
 ```
 
 Опубликовать файлы перевода:
-
 ```bash
 php artisan vendor:publish --tag="helpers-lang"
 ```

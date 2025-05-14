@@ -1,7 +1,7 @@
 {
     "name": "maksde/helpers",
-    "version": "4.1.1",
-    "description": "Helpers for Filament",
+    "version": "4.1.2",
+    "description": "Шаблоны для Resource FilamentPhp которые помогут сократить код для базово используемых компонентов форм, таблиц и фильтров таблиц.",
     "type": "library",
     "license": "MIT",
     "autoload": {
