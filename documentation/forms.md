@@ -7,11 +7,14 @@
 * [Телефон](#телефон)
 * [Заполнитель для даты и времени](#заполнитель-для-даты-и-времени)
 * [Заполнители для полей created_at (Добавлена) и updated_at (Отредактирована)](#заполнители-для-полей-created_at-добавлена-и-updated_at-отредактирована)
-* [Строковое поле с счетчиком символов](#строковое-поле-с-счетчиком-символов)
-* [Текстовое поле с счетчиком символов](#текстовое-поле-с-счетчиком-символов)
-* [Html поле с счетчиком символов](#html-поле-с-счетчиком-символов-richeditor)
+* [Строковое поле со счетчиком символов](#строковое-поле-со-счетчиком-символов)
+* [Текстовое поле со счетчиком символов](#текстовое-поле-со-счетчиком-символов)
+* [Html поле со счетчиком символов](#html-поле-со-счетчиком-символов-richeditor)
 
 ### Переключатель для поля типа boolean
+
+![BooleanToggleForm-off](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/forms/BooleanToggleForm-off.jpg)
+![BooleanToggleForm-on](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/forms/BooleanToggleForm-on.jpg)
 
 Параметры:
 
@@ -29,6 +32,8 @@ BooleanToggleForm::make('is_active', 'Активный')
 
 ### Дата
 
+![DateForm](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/forms/DateForm.jpg)
+
 Параметры:
 
 `string $name` - Название поля
@@ -44,6 +49,8 @@ DateForm::make('date', 'Дата')
 ```
 
 ### Время
+
+![TimeForm](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/forms/TimeForm.jpg)
 
 Параметры:
 
@@ -61,6 +68,8 @@ TimeForm::make('time', 'Время')
 
 ### Дата и время
 
+![DateTimeForm](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/forms/DateTimeForm.jpg)
+
 Параметры:
 
 `string $name` - Название поля
@@ -77,6 +86,8 @@ DateTimeForm::make('datetime', 'Дата и время')
 
 ### Телефон
 
+![PhoneForm](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/forms/PhoneForm.jpg)
+
 Параметры:
 
 `string $name` - Название поля
@@ -92,6 +103,8 @@ PhoneForm::make('phone', 'Телефон')
 ```
 
 ### Заполнитель для даты и времени
+
+![TimestampPlaceholder](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/forms/TimestampPlaceholder.jpg)
 
 Параметры:
 
@@ -121,7 +134,9 @@ use Maksde\Helpers\Filament\Forms\Components\CreateUpdatePlaceholders;
 ...CreateUpdatePlaceholders::make()
 ```
 
-### Строковое поле с счетчиком символов
+### Строковое поле со счетчиком символов
+
+![StringCharCount](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/forms/StringCharCount.jpg)
 
 Параметры:
 
@@ -139,7 +154,9 @@ use Maksde\Helpers\Filament\Forms\Components\StringCharCount;
 StringCharCount::make('name', 'Имя')
 ```
 
-### Текстовое поле с счетчиком символов
+### Текстовое поле со счетчиком символов
+
+![TextCharCount](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/forms/TextCharCount.jpg)
 
 Параметры:
 
@@ -157,7 +174,9 @@ use Maksde\Helpers\Filament\Forms\Components\TextCharCount;
 TextCharCount::make('text', 'Текст')
 ```
 
-### Html поле с счетчиком символов (RichEditor)
+### Html поле со счетчиком символов (RichEditor)
+
+![HtmlCharCount](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/forms/HtmlCharCount.jpg)
 
 Параметры:
 

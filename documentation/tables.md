@@ -1,5 +1,15 @@
 # Таблица
 
+* [Столбец id](#столбец-id)
+* [Иконка для поля типа boolean](#иконка-для-поля-типа-boolean)
+* [Переключатель для поля типа boolean](#переключатель-для-поля-типа-boolean)
+* [E-mail](#e-mail)
+* [Номер телефона](#номер-телефона)
+* [Дата](#дата)
+* [Время](#время)
+* [Дата и время](#дата-и-время)
+* [Стоблцы created_at (Добавлена) и updated_at (Отредактирована)](#стоблцы-created_at-добавлена-и-updated_at-отредактирована)
+
 ### Столбец id
 
 Параметры:
@@ -18,6 +28,8 @@ IdColumn::make()
 
 ### Иконка для поля типа boolean
 
+![BooleanIconColumn](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/tables/BooleanIconColumn.jpg)
+
 Параметры:
 
 `string $name` - Название столбеца
@@ -33,6 +45,8 @@ BooleanIconColumn::make('is_active', 'Активный')
 ```
 
 ### Переключатель для поля типа boolean
+
+![BooleanToggleColumn](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/tables/BooleanToggleColumn.jpg)
 
 Параметры:
 
@@ -50,6 +64,8 @@ BooleanToggleColumn::make('is_active', 'Активный')
 
 ### E-mail
 
+![EmailColumn](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/tables/EmailColumn.jpg)
+
 Параметры:
 
 `string $name` - Название столбца
@@ -63,6 +79,8 @@ EmailColumn::make('email', 'E-mail')
 ```
 
 ### Номер телефона
+
+![PhoneColumn](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/tables/PhoneColumn.jpg)
 
 Параметры:
 
@@ -80,6 +98,8 @@ PhoneColumn::make('phone', 'Номер телефона')
 
 ### Дата
 
+![DateColumn](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/tables/DateColumn.jpg)
+
 Параметры:
 
 `string $name` - Название столбца
@@ -95,6 +115,8 @@ DateColumn::make('date', 'Дата')
 ```
 
 ### Время
+
+![TimeColumn](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/tables/TimeColumn.jpg)
 
 Параметры:
 
@@ -112,6 +134,8 @@ TimeColumn::make('time', 'Время')
 
 
 ### Дата и время
+
+![TimestampColumn](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/tables/TimestampColumn.jpg)
 
 Параметры:
 
