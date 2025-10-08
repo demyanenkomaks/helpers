@@ -1,8 +1,8 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Forms\Components;
+namespace Maksde\Helpers\Filament\Resources\Schemas;
 
-class CreateUpdatePlaceholders
+class CreateUpdateTextEntry
 {
     /**
      * @param  int|string  $columnSpan  Сколько столбцов заполнит компонент в родительской сетке формы
@@ -11,8 +11,8 @@ class CreateUpdatePlaceholders
     public static function make(int|string $columnSpan = 1): array
     {
         return [
-            TimestampPlaceholder::make('created_at', columnSpan: $columnSpan),
-            TimestampPlaceholder::make('updated_at', columnSpan: $columnSpan),
+            TimestampTextEntry::make('created_at', columnSpan: $columnSpan),
+            TimestampTextEntry::make('updated_at', columnSpan: $columnSpan),
         ];
     }
 }

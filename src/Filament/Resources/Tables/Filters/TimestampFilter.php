@@ -1,7 +1,8 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Tables\Filters;
+namespace Maksde\Helpers\Filament\Resources\Tables\Filters;
 
+use Exception;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Builder;
@@ -13,7 +14,7 @@ class TimestampFilter
      * @param  string|null  $label  Подпись столбца
      * @return Filter Компонент фильтра даты и/или время формат поиска от даты до даты
      *
-     * @throws \Exception
+     * @throws Exception
      */
     public static function make(string $name, ?string $label = null): Filter
     {
@@ -27,14 +28,14 @@ class TimestampFilter
         }
 
         return Filter::make($name)
-            ->form([
+            ->schema([
                 DatePicker::make($name.'_from')->label($label.' от'),
                 DatePicker::make($name.'_until')->label($label.' до'),
             ])
             ->query(function (Builder $query, array $data) use ($name): Builder {
                 return $query
-                    ->when($data[$name.'_from'], fn (Builder $query, $date): Builder => $query->whereDate($name, '>=', $date))
-                    ->when($data[$name.'_until'], fn (Builder $query, $date): Builder => $query->whereDate($name, '<=', $date));
+                    ->when($data[$name.'_from'], fn (Builder $query, $date): \Illuminate\Database\Query\Builder => $query->whereDate($name, '>=', $date))
+                    ->when($data[$name.'_until'], fn (Builder $query, $date): \Illuminate\Database\Query\Builder => $query->whereDate($name, '<=', $date));
             });
     }
 }

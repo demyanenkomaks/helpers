@@ -8,7 +8,7 @@
 * [Дата](#дата)
 * [Время](#время)
 * [Дата и время](#дата-и-время)
-* [Стоблцы created_at (Добавлена) и updated_at (Отредактирована)](#стоблцы-created_at-добавлена-и-updated_at-отредактирована)
+* [Столбцы created_at (Добавлена) и updated_at (Отредактирована)](#столбцы-created_at-добавлена-и-updated_at-отредактирована)
 
 ### Столбец id
 
@@ -21,7 +21,7 @@
 `bool $isToggledHiddenByDefault = true` - Столбец скрыт по умолчанию
 
 ```php
-use Maksde\Helpers\Filament\Tables\Columns\IdColumn;
+use Maksde\Helpers\Filament\Resources\Tables\Columns\IdColumn;
 
 IdColumn::make()
 ```
@@ -32,14 +32,14 @@ IdColumn::make()
 
 Параметры:
 
-`string $name` - Название столбеца
+`string $name` - Название столбца
 
 `?string $label = null` - Подпись столбца
 
 `bool $isToggledHiddenByDefault = false` - Столбец скрыт по умолчанию
 
 ```php
-use Maksde\Helpers\Filament\Tables\Columns\BooleanIconColumn;
+use Maksde\Helpers\Filament\Resources\Tables\Columns\BooleanIconColumn;
 
 BooleanIconColumn::make('is_active', 'Активный')
 ```
@@ -57,7 +57,7 @@ BooleanIconColumn::make('is_active', 'Активный')
 `bool $isToggledHiddenByDefault = false` - Столбец скрыт по умолчанию
 
 ```php
-use Maksde\Helpers\Filament\Tables\Columns\BooleanToggleColumn;
+use Maksde\Helpers\Filament\Resources\Tables\Columns\BooleanToggleColumn;
 
 BooleanToggleColumn::make('is_active', 'Активный')
 ```
@@ -73,7 +73,7 @@ BooleanToggleColumn::make('is_active', 'Активный')
 `?string $label = null` - Подпись столбца
 
 ```php
-use Maksde\Helpers\Filament\Tables\Columns\EmailColumn;
+use Maksde\Helpers\Filament\Resources\Tables\Columns\EmailColumn;
 
 EmailColumn::make('email', 'E-mail')
 ```
@@ -91,7 +91,7 @@ EmailColumn::make('email', 'E-mail')
 `?string $format = null` - Формат отображения номера телефона, дефолтный указан в конфиге
 
 ```php
-use Maksde\Helpers\Filament\Tables\Columns\PhoneColumn;
+use Maksde\Helpers\Filament\Resources\Tables\Columns\PhoneColumn;
 
 PhoneColumn::make('phone', 'Номер телефона')
 ```
@@ -109,7 +109,7 @@ PhoneColumn::make('phone', 'Номер телефона')
 `?string $format = null` - Формат отображения даты, дефолтный указан в конфиге
 
 ```php
-use Maksde\Helpers\Filament\Tables\Columns\DateColumn;
+use Maksde\Helpers\Filament\Resources\Tables\Columns\DateColumn;
 
 DateColumn::make('date', 'Дата')
 ```
@@ -127,7 +127,7 @@ DateColumn::make('date', 'Дата')
 `?string $format = null` - Формат отображения времени, дефолтный указан в конфиге
 
 ```php
-use Maksde\Helpers\Filament\Tables\Columns\TimeColumn;
+use Maksde\Helpers\Filament\Resources\Tables\Columns\TimeColumn;
 
 TimeColumn::make('time', 'Время')
 ```
@@ -148,15 +148,15 @@ TimeColumn::make('time', 'Время')
 `?string $format = null` - Формат отображения даты и времени, дефолтный указан в конфиге
 
 ```php
-use Maksde\Helpers\Filament\Tables\Columns\TimestampColumn;
+use Maksde\Helpers\Filament\Resources\Tables\Columns\TimestampColumn;
 
 TimestampColumn::make('datetime', 'Дата и время')
 ```
 
-### Стоблцы created_at (Добавлена) и updated_at (Отредактирована)
+### Столбцы created_at (Добавлена) и updated_at (Отредактирована)
 
 ```php
-use Maksde\Helpers\Filament\Tables\Columns\CreateUpdateColumns;
+use Maksde\Helpers\Filament\Resources\Tables\Columns\CreateUpdateColumns;
 
 ...CreateUpdateColumns::make()
 ```

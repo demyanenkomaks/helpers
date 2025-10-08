@@ -1,13 +1,13 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Tables\Columns;
+namespace Maksde\Helpers\Filament\Resources\Tables\Columns;
 
 use Filament\Tables\Columns\IconColumn;
 
 class BooleanIconColumn
 {
     /**
-     * @param  string  $name  Название столбеца
+     * @param  string  $name  Название столбца
      * @param  string|null  $label  Подпись столбца
      * @param  bool  $isToggledHiddenByDefault  Столбец скрыт по умолчанию
      * @return IconColumn Столбец со значком

@@ -16,14 +16,14 @@
 composer require maksde/helpers
 ```
 
-Опубликуйте файл конфигурации:
+Опубликовать файл конфигурации:
 ```bash
 php artisan vendor:publish --tag="helpers-config"
 ```
 
 Опубликовать файлы перевода:
 ```bash
-php artisan vendor:publish --tag="helpers-lang"
+php artisan vendor:publish --tag="helpers-translations"
 ```
 
 ## Шаблоны:

@@ -1,6 +1,6 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Tables\Columns;
+namespace Maksde\Helpers\Filament\Resources\Tables\Columns;
 
 class CreateUpdateColumns
 {

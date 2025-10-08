@@ -1,13 +1,15 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Tables\Filters;
+namespace Maksde\Helpers\Filament\Resources\Tables\Filters;
+
+use Exception;
 
 class CreateUpdateFilters
 {
     /**
      * @return array Массив компонентов фильтров Добавлена и Отредактирована
      *
-     * @throws \Exception
+     * @throws Exception
      */
     public static function make(): array
     {

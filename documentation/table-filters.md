@@ -14,7 +14,7 @@
 `?string $label = null` - Подпись столбца
 
 ```php
-use Maksde\Helpers\Filament\Tables\Filters\TimestampFilter;
+use Maksde\Helpers\Filament\Resources\Tables\Filters\TimestampFilter;
 
 TimestampFilter::make('published_at', 'Опубликована')
 ```
@@ -24,7 +24,7 @@ TimestampFilter::make('published_at', 'Опубликована')
 ![CreateUpdateFilters](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/table-filters/CreateUpdateFilters.jpg)
 
 ```php
-use Maksde\Helpers\Filament\Tables\Filters\CreateUpdateFilters;
+use Maksde\Helpers\Filament\Resources\Tables\Filters\CreateUpdateFilters;
 
 ...CreateUpdateFilters::make()
 ```

@@ -18,7 +18,7 @@ class HelpersServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../resources/lang' => lang_path('vendor/helpers'),
-            ], 'helpers-lang');
+            ], 'helpers-translations');
 
             $this->publishes([
                 __DIR__.'/../config/helpers.php' => config_path('helpers.php'),

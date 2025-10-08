@@ -25,7 +25,7 @@
 `int|string $columnSpan = 'full'` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Forms\Components\BooleanToggleForm;
+use Maksde\Helpers\Filament\Resources\Schemas\BooleanToggleForm;
 
 BooleanToggleForm::make('is_active', 'Активный')
 ```
@@ -43,7 +43,7 @@ BooleanToggleForm::make('is_active', 'Активный')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Forms\Components\DateForm;
+use Maksde\Helpers\Filament\Resources\Schemas\DateForm;
 
 DateForm::make('date', 'Дата')
 ```
@@ -61,7 +61,7 @@ DateForm::make('date', 'Дата')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Forms\Components\TimeForm;
+use Maksde\Helpers\Filament\Resources\Schemas\TimeForm;
 
 TimeForm::make('time', 'Время')
 ```
@@ -79,7 +79,7 @@ TimeForm::make('time', 'Время')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Forms\Components\DateTimeForm;
+use Maksde\Helpers\Filament\Resources\Schemas\DateTimeForm;
 
 DateTimeForm::make('datetime', 'Дата и время')
 ```
@@ -97,7 +97,7 @@ DateTimeForm::make('datetime', 'Дата и время')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Forms\Components\PhoneForm;
+use Maksde\Helpers\Filament\Resources\Schemas\PhoneForm;
 
 PhoneForm::make('phone', 'Телефон')
 ```
@@ -117,7 +117,7 @@ PhoneForm::make('phone', 'Телефон')
 `?string $format = null` - Формат отображения даты и времени, дефолтный указан в конфиге
 
 ```php
-use Maksde\Helpers\Filament\Forms\Components\TimestampPlaceholder;
+use Maksde\Helpers\Filament\Resources\Schemas\TimestampPlaceholder;
 
 TimestampPlaceholder::make('published_at', 'Опубликована')
 ```
@@ -129,9 +129,9 @@ TimestampPlaceholder::make('published_at', 'Опубликована')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Forms\Components\CreateUpdatePlaceholders;
+use Maksde\Helpers\Filament\Resources\Schemas\CreateUpdateTextEntry;
 
-...CreateUpdatePlaceholders::make()
+...CreateUpdateTextEntry::make()
 ```
 
 ### Строковое поле со счетчиком символов
@@ -149,7 +149,7 @@ use Maksde\Helpers\Filament\Forms\Components\CreateUpdatePlaceholders;
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Forms\Components\StringCharCount;
+use Maksde\Helpers\Filament\Resources\Schemas\StringCharCount;
 
 StringCharCount::make('name', 'Имя')
 ```
@@ -169,7 +169,7 @@ StringCharCount::make('name', 'Имя')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Forms\Components\TextCharCount;
+use Maksde\Helpers\Filament\Resources\Schemas\TextCharCount;
 
 TextCharCount::make('text', 'Текст')
 ```
@@ -189,7 +189,7 @@ TextCharCount::make('text', 'Текст')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Forms\Components\HtmlCharCount;
+use Maksde\Helpers\Filament\Resources\Schemas\HtmlCharCount;
 
 HtmlCharCount::make('text', 'Текст')
 ```

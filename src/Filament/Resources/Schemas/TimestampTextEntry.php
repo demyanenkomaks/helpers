@@ -1,24 +1,24 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Forms\Components;
+namespace Maksde\Helpers\Filament\Resources\Schemas;
 
-use Filament\Forms\Components\Placeholder;
+use Filament\Infolists\Components\TextEntry;
 use Illuminate\Support\Carbon;
 
-class TimestampPlaceholder
+class TimestampTextEntry
 {
     /**
      * @param  string  $name  Название поля
      * @param  string|null  $label  Подпись поля
      * @param  int|string  $columnSpan  Сколько столбцов заполнит компонент в родительской сетке формы
      * @param  string|null  $format  Формат отображения даты и времени, дефолтный указан в конфиге
-     * @return Placeholder Компонент заполнитель
+     * @return TextEntry Компонент заполнитель
      */
-    public static function make(string $name, ?string $label = null, int|string $columnSpan = 1, ?string $format = null): Placeholder
+    public static function make(string $name, ?string $label = null, int|string $columnSpan = 1, ?string $format = null): TextEntry
     {
         $format = $format ?? config('helpers.format.timestamp');
 
-        return Placeholder::make($name)
+        return TextEntry::make($name)
             ->label(function () use ($name, $label): ?string {
                 if ($label) {
                     return $label;
@@ -31,7 +31,7 @@ class TimestampPlaceholder
                     default => null,
                 };
             })
-            ->content(fn ($record): string => ! empty($record->{$name}) ? Carbon::parse($record->{$name})->translatedFormat($format) : '')
+            ->formatStateUsing(fn ($record): string => ! empty($record->{$name}) ? Carbon::parse($record->{$name})->translatedFormat($format) : '')
             ->hidden(fn ($record): bool => empty($record->{$name}))
             ->columnSpan($columnSpan);
     }

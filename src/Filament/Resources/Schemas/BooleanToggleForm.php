@@ -1,6 +1,6 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Forms\Components;
+namespace Maksde\Helpers\Filament\Resources\Schemas;
 
 use Filament\Forms\Components\Toggle;
 
