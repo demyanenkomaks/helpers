@@ -1,6 +1,6 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Resources\Schemas;
+namespace Maksde\Helpers\Filament\Resources\Schemas\Infolists;
 
 use Filament\Infolists\Components\TextEntry;
 use Illuminate\Support\Carbon;
@@ -32,6 +32,7 @@ class TimestampTextEntry
                 };
             })
             ->formatStateUsing(fn ($record): string => ! empty($record->{$name}) ? Carbon::parse($record->{$name})->translatedFormat($format) : '')
+            ->sinceTooltip()
             ->hidden(fn ($record): bool => empty($record->{$name}))
             ->columnSpan($columnSpan);
     }

@@ -7,7 +7,7 @@
 [![Packagist License](https://img.shields.io/packagist/l/maksde/helpers)](https://packagist.org/packages/maksde/helpers)
 
 
-Шаблоны для Resource FilamentPhp которые помогут сократить код для базово используемых компонентов форм, таблиц и фильтров таблиц.
+Шаблоны для Resource FilamentPhp которые помогут сократить код для базово используемых компонентов форм, просмотра записи, таблиц и фильтров таблиц.
 
 ## Установка
 
@@ -29,5 +29,7 @@ php artisan vendor:publish --tag="helpers-translations"
 ## Шаблоны:
 
 * [Форм](documentation/forms.md)
+* [Просмотр записи](documentation/infolists.md)
 * [Таблиц](documentation/tables.md)
+* [Действий таблицы](documentation/table-actions.md)
 * [Фильтров таблиц](documentation/table-filters.md)

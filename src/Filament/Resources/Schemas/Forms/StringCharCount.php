@@ -1,21 +1,21 @@
 <?php
 
-namespace Maksde\Helpers\Filament\Resources\Schemas;
+namespace Maksde\Helpers\Filament\Resources\Schemas\Forms;
 
-use Schmeits\FilamentCharacterCounter\Forms\Components\Textarea;
+use Schmeits\FilamentCharacterCounter\Forms\Components\TextInput;
 
-class TextCharCount
+class StringCharCount
 {
     /**
      * @param  string  $name  Название поля
      * @param  string|null  $label  Подпись поля
      * @param  int  $maxLength  Максимальное количество символов
      * @param  int|string  $columnSpan  Сколько столбцов заполнит компонент в родительской сетке формы
-     * @return Textarea Компонент ввода текста с счетчиком символов
+     * @return TextInput Компонент ввода текста с счетчиком символов
      */
-    public static function make(string $name, ?string $label = null, int $maxLength = 10000, int|string $columnSpan = 1): Textarea
+    public static function make(string $name, ?string $label = null, int $maxLength = 255, int|string $columnSpan = 1): TextInput
     {
-        return Textarea::make($name)
+        return TextInput::make($name)
             ->label($label)
             ->maxLength($maxLength)
             ->columnSpan($columnSpan);

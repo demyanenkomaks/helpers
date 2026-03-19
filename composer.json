@@ -1,7 +1,7 @@
 {
     "name": "maksde/helpers",
-    "version": "5.0.1",
-    "description": "Шаблоны для Resource FilamentPhp которые помогут сократить код для базово используемых компонентов форм, таблиц и фильтров таблиц.",
+    "version": "6.0.0",
+    "description": "Шаблоны для Resource FilamentPhp которые помогут сократить код для базово используемых компонентов форм и таблиц.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -21,10 +21,15 @@
         "filament/filament": "^4.0|^5.0",
         "schmeits/filament-character-counter": "^5.0"
     },
+    "suggest": {
+        "tomatophp/filament-users": "Нужен для действий ChangePassword и ImpersonateAction (переводы filament-users::, конфиг impersonate)."
+    },
     "require-dev": {
         "driftingly/rector-laravel": "^2.0",
+        "laravel/framework": "^12.0|^13.0",
         "laravel/pint": "^1.13",
-        "larastan/larastan": "^3.3"
+        "larastan/larastan": "^3.3",
+        "tomatophp/filament-users": "^5.0"
     },
     "scripts": {
         "pint": "./vendor/bin/pint",

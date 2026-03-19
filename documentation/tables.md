@@ -155,8 +155,13 @@ TimestampColumn::make('datetime', 'Дата и время')
 
 ### Столбцы created_at (Добавлена) и updated_at (Отредактирована)
 
+Возвращает массив из двух `TimestampColumn` для `created_at` и `updated_at` (по умолчанию скрыты в таблице).
+
 ```php
 use Maksde\Helpers\Filament\Resources\Tables\Columns\CreateUpdateColumns;
 
-...CreateUpdateColumns::make()
+->columns([
+    // ... другие столбцы
+    ...CreateUpdateColumns::make(),
+])
 ```

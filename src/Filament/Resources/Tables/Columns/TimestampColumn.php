@@ -32,6 +32,7 @@ class TimestampColumn
             })
             ->sortable()
             ->dateTime($format)
+            ->sinceTooltip()
             ->toggleable(isToggledHiddenByDefault: $isToggledHiddenByDefault);
     }
 }

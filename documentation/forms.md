@@ -5,8 +5,6 @@
 * [Время](#время)
 * [Дата и время](#дата-и-время)
 * [Телефон](#телефон)
-* [Заполнитель для даты и времени](#заполнитель-для-даты-и-времени)
-* [Заполнители для полей created_at (Добавлена) и updated_at (Отредактирована)](#заполнители-для-полей-created_at-добавлена-и-updated_at-отредактирована)
 * [Строковое поле со счетчиком символов](#строковое-поле-со-счетчиком-символов)
 * [Текстовое поле со счетчиком символов](#текстовое-поле-со-счетчиком-символов)
 * [Html поле со счетчиком символов](#html-поле-со-счетчиком-символов-richeditor)
@@ -25,7 +23,7 @@
 `int|string $columnSpan = 'full'` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Resources\Schemas\BooleanToggleForm;
+use Maksde\Helpers\Filament\Resources\Schemas\Forms\BooleanToggleForm;
 
 BooleanToggleForm::make('is_active', 'Активный')
 ```
@@ -43,7 +41,7 @@ BooleanToggleForm::make('is_active', 'Активный')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Resources\Schemas\DateForm;
+use Maksde\Helpers\Filament\Resources\Schemas\Forms\DateForm;
 
 DateForm::make('date', 'Дата')
 ```
@@ -61,7 +59,7 @@ DateForm::make('date', 'Дата')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Resources\Schemas\TimeForm;
+use Maksde\Helpers\Filament\Resources\Schemas\Forms\TimeForm;
 
 TimeForm::make('time', 'Время')
 ```
@@ -79,7 +77,7 @@ TimeForm::make('time', 'Время')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Resources\Schemas\DateTimeForm;
+use Maksde\Helpers\Filament\Resources\Schemas\Forms\DateTimeForm;
 
 DateTimeForm::make('datetime', 'Дата и время')
 ```
@@ -97,41 +95,9 @@ DateTimeForm::make('datetime', 'Дата и время')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Resources\Schemas\PhoneForm;
+use Maksde\Helpers\Filament\Resources\Schemas\Forms\PhoneForm;
 
 PhoneForm::make('phone', 'Телефон')
-```
-
-### Заполнитель для даты и времени
-
-![TimestampPlaceholder](https://raw.githubusercontent.com/demyanenkomaks/helpers/master/documentation/image/forms/TimestampPlaceholder.jpg)
-
-Параметры:
-
-`string $name` - Название поля
-
-`?string $label = null` - Подпись поля
-
-`int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
-
-`?string $format = null` - Формат отображения даты и времени, дефолтный указан в конфиге
-
-```php
-use Maksde\Helpers\Filament\Resources\Schemas\TimestampPlaceholder;
-
-TimestampPlaceholder::make('published_at', 'Опубликована')
-```
-
-### Заполнители для полей created_at (Добавлена) и updated_at (Отредактирована)
-
-Параметры:
-
-`int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
-
-```php
-use Maksde\Helpers\Filament\Resources\Schemas\CreateUpdateTextEntry;
-
-...CreateUpdateTextEntry::make()
 ```
 
 ### Строковое поле со счетчиком символов
@@ -149,7 +115,7 @@ use Maksde\Helpers\Filament\Resources\Schemas\CreateUpdateTextEntry;
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Resources\Schemas\StringCharCount;
+use Maksde\Helpers\Filament\Resources\Schemas\Forms\StringCharCount;
 
 StringCharCount::make('name', 'Имя')
 ```
@@ -169,7 +135,7 @@ StringCharCount::make('name', 'Имя')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Resources\Schemas\TextCharCount;
+use Maksde\Helpers\Filament\Resources\Schemas\Forms\TextCharCount;
 
 TextCharCount::make('text', 'Текст')
 ```
@@ -189,7 +155,7 @@ TextCharCount::make('text', 'Текст')
 `int|string $columnSpan = 1` - Сколько столбцов заполнит компонент в родительской сетке формы
 
 ```php
-use Maksde\Helpers\Filament\Resources\Schemas\HtmlCharCount;
+use Maksde\Helpers\Filament\Resources\Schemas\Forms\HtmlCharCount;
 
 HtmlCharCount::make('text', 'Текст')
 ```
