@@ -2,6 +2,8 @@
 
 Готовые действия для метода `->actions()` / `->recordActions()` таблицы Filament (классы в `Maksde\Helpers\Filament\Resources\Tables\Actions`).
 
+Подсказки у **просмотра**, **редактирования** и **удаления** берутся из переводов пакета (`helpers::helpers.table_action.*_tooltip` в `resources/lang/{locale}/helpers.php`). Их можно переопределить после публикации тега `helpers-translations`.
+
 * [Просмотр](#просмотр)
 * [Редактирование](#редактирование)
 * [Удаление](#удаление)
@@ -12,7 +14,7 @@
 
 ### Просмотр
 
-Иконка-кнопка с подсказкой «Просмотр». Обёртка над `Filament\Actions\ViewAction`.
+Иконка-кнопка с подсказкой из `helpers.table_action.view_tooltip`. Обёртка над `Filament\Actions\ViewAction`.
 
 ```php
 use Maksde\Helpers\Filament\Resources\Tables\Actions\ViewAction;
@@ -24,7 +26,7 @@ ViewAction::make()
 
 ### Редактирование
 
-Иконка-кнопка с подсказкой «Редактировать». Обёртка над `Filament\Actions\EditAction`.
+Иконка-кнопка с подсказкой из `helpers.table_action.edit_tooltip`. Обёртка над `Filament\Actions\EditAction`.
 
 ```php
 use Maksde\Helpers\Filament\Resources\Tables\Actions\EditAction;
@@ -36,7 +38,7 @@ EditAction::make()
 
 ### Удаление
 
-Иконка-кнопка с подсказкой «Удалить». Обёртка над `Filament\Actions\DeleteAction`.
+Иконка-кнопка с подсказкой из `helpers.table_action.delete_tooltip`. Обёртка над `Filament\Actions\DeleteAction`.
 
 ```php
 use Maksde\Helpers\Filament\Resources\Tables\Actions\DeleteAction;

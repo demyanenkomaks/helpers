@@ -13,4 +13,19 @@ return [
             'email' => 'E-mail скопирован',
         ],
     ],
+
+    'table_action' => [
+        'view_tooltip' => 'Просмотр',
+        'edit_tooltip' => 'Редактировать',
+        'delete_tooltip' => 'Удалить',
+    ],
+
+    'filter' => [
+        'timestamp_from' => ':label от',
+        'timestamp_until' => ':label до',
+    ],
+
+    'table_column' => [
+        'id' => 'ID',
+    ],
 ];

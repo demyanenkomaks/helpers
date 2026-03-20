@@ -10,6 +10,6 @@ class ViewAction
     {
         return BaseAction::make()
             ->iconButton()
-            ->tooltip('Просмотр');
+            ->tooltip(__('helpers::helpers.table_action.view_tooltip'));
     }
 }

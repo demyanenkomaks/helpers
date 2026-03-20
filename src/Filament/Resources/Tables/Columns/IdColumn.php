@@ -15,7 +15,7 @@ class IdColumn
     public static function make(string $name = 'id', ?string $label = null, bool $isToggledHiddenByDefault = true): TextColumn
     {
         return TextColumn::make($name)
-            ->label($label)
+            ->label($label ?? __('helpers::helpers.table_column.id'))
             ->sortable()
             ->toggleable(isToggledHiddenByDefault: $isToggledHiddenByDefault);
     }

@@ -10,6 +10,6 @@ class EditAction
     {
         return BaseAction::make()
             ->iconButton()
-            ->tooltip('Редактировать');
+            ->tooltip(__('helpers::helpers.table_action.edit_tooltip'));
     }
 }

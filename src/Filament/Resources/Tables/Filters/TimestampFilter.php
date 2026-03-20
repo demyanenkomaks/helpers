@@ -23,14 +23,14 @@ class TimestampFilter
                 'created_at' => __('helpers::helpers.timestamp.created_at'),
                 'updated_at' => __('helpers::helpers.timestamp.updated_at'),
                 'deleted_at' => __('helpers::helpers.timestamp.deleted_at'),
-                default => null,
+                default => $name,
             };
         }
 
         return Filter::make($name)
             ->schema([
-                DatePicker::make($name.'_from')->label($label.' от'),
-                DatePicker::make($name.'_until')->label($label.' до'),
+                DatePicker::make($name.'_from')->label(__('helpers::helpers.filter.timestamp_from', ['label' => $label])),
+                DatePicker::make($name.'_until')->label(__('helpers::helpers.filter.timestamp_until', ['label' => $label])),
             ])
             ->query(function (Builder $query, array $data) use ($name): Builder {
                 return $query

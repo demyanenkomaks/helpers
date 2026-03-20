@@ -10,6 +10,6 @@ class DeleteAction
     {
         return BaseAction::make()
             ->iconButton()
-            ->tooltip('Удалить');
+            ->tooltip(__('helpers::helpers.table_action.delete_tooltip'));
     }
 }

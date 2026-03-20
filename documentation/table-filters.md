@@ -13,7 +13,7 @@
 
 `string $name` — имя столбца в БД (**обязательный**)
 
-`?string $label = null` — подпись в UI (метки полей «… от» / «… до»)
+`?string $label = null` — базовая подпись столбца; если не задана, для `created_at` / `updated_at` / `deleted_at` подставляются переводы `helpers.timestamp.*`, иначе используется `$name`. Метки полей диапазона задаются строками `helpers.filter.timestamp_from` и `helpers.filter.timestamp_until` (плейсхолдер `:label`).
 
 ```php
 use Maksde\Helpers\Filament\Resources\Tables\Filters\TimestampFilter;
