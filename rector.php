@@ -13,7 +13,6 @@ return RectorConfig::configure()
         __DIR__.'/src',
     ])
     ->withPhpVersion(PhpVersion::PHP_84)
-    ->withPhpStanConfigs([__DIR__.'/phpstan.neon.dist'])
     ->withSets([
         LaravelLevelSetList::UP_TO_LARAVEL_120,
     ])
