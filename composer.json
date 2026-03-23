@@ -1,6 +1,6 @@
 {
     "name": "maksde/helpers",
-    "version": "6.0.1",
+    "version": "6.0.2",
     "description": "Шаблоны для Resource FilamentPhp которые помогут сократить код для базово используемых компонентов форм и таблиц.",
     "type": "library",
     "license": "MIT",

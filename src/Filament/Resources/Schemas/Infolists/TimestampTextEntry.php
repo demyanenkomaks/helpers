@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Maksde\Helpers\Filament\Resources\Schemas\Infolists;
 
 use Filament\Infolists\Components\TextEntry;

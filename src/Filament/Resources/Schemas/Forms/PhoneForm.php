@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Maksde\Helpers\Filament\Resources\Schemas\Forms;
 
 use Filament\Forms\Components\TextInput;

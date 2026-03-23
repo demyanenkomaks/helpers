@@ -1,6 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 use Rector\Config\RectorConfig;
+use Rector\ValueObject\PhpVersion;
 use RectorLaravel\Set\LaravelLevelSetList;
 
 return RectorConfig::configure()
@@ -9,6 +12,8 @@ return RectorConfig::configure()
         __DIR__.'/resources',
         __DIR__.'/src',
     ])
+    ->withPhpVersion(PhpVersion::PHP_84)
+    ->withPhpStanConfigs([__DIR__.'/phpstan.neon.dist'])
     ->withSets([
         LaravelLevelSetList::UP_TO_LARAVEL_120,
     ])
