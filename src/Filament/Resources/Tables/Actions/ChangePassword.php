@@ -41,9 +41,12 @@ class ChangePassword
                     ->required(static fn ($record): bool => ! $record)
                     ->dehydrated(false),
             ])
-            ->action(static function ($record, $data): void {
-                $auto = ! isset($data['password']);
-                $password = $data['password'] ?? Str::random(12);
+            ->action(function ($livewire, $record): void {
+                $index = array_key_last($livewire->mountedActions);
+                $password = $livewire->mountedActions[$index]['data']['password'] ?? null;
+
+                $auto = ! isset($password);
+                $password = $password ?? Str::random(12);
                 $record->password = $password;
                 $record->save();
 
